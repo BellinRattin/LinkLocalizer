@@ -1,0 +1,6 @@
+## Interface: 80000
+## Title: LinkLocalizer
+## Notes: Now all links in chat will be on your locale
+## Author: BellinRattin
+## Version: 1.0.0
+LinkLocalizer.lua
