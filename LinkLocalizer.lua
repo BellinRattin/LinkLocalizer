@@ -54,6 +54,7 @@ local string = string
 local GetItemInfo = GetItemInfo
 local GetSpellInfo = GetSpellInfo
 local GetAchievementInfo = GetAchievementInfo
+local GetCurrencyInfo = GetCurrencyInfo
 local EJ_GetInstanceInfo = EJ_GetInstanceInfo
 local EJ_GetEncounterInfo = EJ_GetEncounterInfo
 
@@ -94,6 +95,9 @@ local function Filter(self, event, msg, author, ... )
 
 		elseif tipe == "achievement" then
 			tmp = select(2,GetAchievementInfo(id))
+
+		elseif tipe == "currency" then
+			tmp = GetCurrencyInfo(id)
 
 		elseif tipe == "journal" then
 			if id == "0" then
