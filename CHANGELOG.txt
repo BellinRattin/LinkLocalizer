@@ -1,0 +1,10 @@
+Link Localizer
+source: https://github.com/BellinRattin/LinkLocalizer
+curse:  https://www.curseforge.com/wow/addons/linklocalizer
+Open a tiket on GitHub for errors and suggestions
+
+v 1.0.1 - 15 October 2019
+TOC bump to 8.2.5
+
+v. 1.0.0 - 20 December 2018
+Initial Release
