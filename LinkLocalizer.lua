@@ -23,16 +23,15 @@ LinkLocalizer:RegisterEvent("ADDON_LOADED")
 ------------------------------------------------------------------------------------------------------------
 --MyScanningTooltip = CreateFrame( "GameTooltip", "MyScanningTooltip", nil, "GameTooltipTemplate" )
 local NameFromTooltip = setmetatable({}, { __index = function(t, link)
-         LinkLocalizer:SetOwner(UIParent, "ANCHOR_NONE")
-         LinkLocalizer:SetHyperlink(link)
-         local title = LLTooltipTextLeft1:GetText()
-         LinkLocalizer:Hide()
-         if title and title ~= RETRIEVING_DATA and title ~= RETRIEVING_ITEM_INFO then
-            t[link] = title
-            return title
-         end
+	LinkLocalizer:SetOwner(UIParent, "ANCHOR_NONE")
+	LinkLocalizer:SetHyperlink(link)
+	local title = LLTooltipTextLeft1:GetText()
+	LinkLocalizer:Hide()
+	if title and title ~= RETRIEVING_DATA and title ~= RETRIEVING_ITEM_INFO then
+		t[link] = title
+		return title
+	end
 end })
-
 ------------------------------------------------------------------------------------------------------------
 
 local hyperLinkPattern = "|c.-|r"
@@ -132,5 +131,5 @@ end)
 
 SLASH_LINKLOCALIZERC1, SLASH_LINKLOCALIZERC2 = '/ll', '/linklocalizer'
 function SlashCmdList.LINKLOCALIZERC()
-	print("LinkLocalizer will try to \nupdate all the links in your locale, \ritems can misbehave, blame blizzard and it's caching system")
+	print("LinkLocalizer will try to \nupdate all the links in your locale, \ritems can misbehave, blame blizzard and its caching system")
 end
