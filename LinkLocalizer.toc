@@ -1,6 +1,7 @@
-## Interface: 80100
+## Interface: 80205
 ## Title: LinkLocalizer
 ## Notes: Now all links in chat will be on your locale
 ## Author: BellinRattin
-## Version: 1.0.0
+## Version: 1.0.1
+
 LinkLocalizer.lua
